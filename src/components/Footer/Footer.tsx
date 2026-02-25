@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -61,10 +62,12 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <div className={styles.bottomLogo}>
-            <div className={styles.bottomLogoIcon}>&#9650;</div>
-            <span className={styles.bottomLogoText}>
-              move<span className={styles.bottomLogoAccent}>:</span>elevator
-            </span>
+            <Image
+              src="/images/logo-white.svg"
+              alt="move:elevator"
+              width={150}
+              height={28}
+            />
           </div>
           <div className={styles.bottomLinks}>
             <a href="#" className={styles.bottomLink}>

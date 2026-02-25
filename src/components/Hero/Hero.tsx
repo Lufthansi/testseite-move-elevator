@@ -46,7 +46,7 @@ export default function Hero() {
         >
           <div className={`brutalism-card ${styles.imageCard}`}>
             <img
-              src="/images/hero-team.jpg"
+              src="/images/hero-team.avif"
               alt="Modernes Team arbeitet gemeinsam an einem digitalen Projekt"
               className={styles.image}
             />

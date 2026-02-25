@@ -10,26 +10,26 @@ const projects = [
     tags: "UX/UI, React",
     name: "Phantasialand",
     description: "Digitales Freizeitpark-Erlebnis der nächsten Generation.",
-    image: "/images/project-phantasialand.jpg",
+    image: "/images/project-phantasialand.avif",
   },
   {
     tags: "Web Dev, Security",
     name: "Audi BKK",
     description:
       "Sicherer Relaunch des hochfrequentierten Gesundheitsportals.",
-    image: "/images/project-audi-bkk.jpg",
+    image: "/images/project-audi-bkk.avif",
   },
   {
     tags: "Campaign, AI",
     name: "Coca-Cola",
     description: "KI-gestützte Content Engine für globalen Output.",
-    image: "/images/project-coca-cola.jpg",
+    image: "/images/project-coca-cola.avif",
   },
   {
     tags: "Strategy, E-Comm",
     name: "Red Bull",
     description: "Next-Gen Performance Shop für ultimative Verkaufsziele.",
-    image: "/images/project-red-bull.jpg",
+    image: "/images/project-red-bull.avif",
   },
 ];
 

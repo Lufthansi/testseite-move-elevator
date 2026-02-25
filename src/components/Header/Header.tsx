@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Header.module.css";
 
 const navItems = [
@@ -15,10 +16,13 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
-          <div className={styles.logoIcon}>&#9650;</div>
-          <span className={styles.logoText}>
-            move<span className={styles.logoAccent}>:</span>elevator
-          </span>
+          <Image
+            src="/images/logo.svg"
+            alt="move:elevator"
+            width={180}
+            height={32}
+            priority
+          />
         </Link>
 
         <nav className={styles.nav}>
