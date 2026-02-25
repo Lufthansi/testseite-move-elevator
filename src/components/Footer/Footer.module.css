@@ -1,0 +1,133 @@
+.footer {
+  background: var(--color-bg-dark);
+  color: var(--color-slate-100);
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.upper {
+  display: grid;
+  gap: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid var(--color-slate-700);
+}
+
+@media (min-width: 1024px) {
+  .upper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.headline {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.8;
+  margin-bottom: 2.5rem;
+  font-style: italic;
+}
+
+.headlineAccent {
+  color: var(--color-primary);
+}
+
+.footerDescription {
+  font-size: 1.25rem;
+  color: var(--color-slate-400);
+  max-width: 28rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.columnLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.columnList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.columnLink {
+  font-weight: 700;
+  font-size: 1.125rem;
+  transition: color var(--transition-fast);
+}
+
+.columnLink:hover {
+  color: var(--color-primary);
+}
+
+.bottom {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.bottomLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bottomLogoIcon {
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-slate-100);
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.bottomLogoText {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.bottomLogoAccent {
+  color: var(--color-primary);
+}
+
+.bottomLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-slate-500);
+}
+
+.bottomLink:hover {
+  color: var(--color-white);
+}

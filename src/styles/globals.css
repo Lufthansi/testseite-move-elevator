@@ -1,0 +1,132 @@
+/* ============================================
+   Move Elevator — Global Styles & Design Tokens
+   Soft Brutalism Design System
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* --- Design Tokens --- */
+:root {
+  /* Colors */
+  --color-primary: #ff4929;
+  --color-primary-light: rgba(255, 73, 41, 0.1);
+  --color-bg-light: #f8f6f5;
+  --color-bg-dark: #23120f;
+  --color-white: #ffffff;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-900: #0f172a;
+
+  /* Typography */
+  --font-display: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-px: 6px;
+  --max-width: 1280px;
+
+  /* Border */
+  --border-width: 2px;
+  --border-color: var(--color-slate-900);
+  --border: var(--border-width) solid var(--border-color);
+
+  /* Shadows (Soft Brutalism) */
+  --shadow-card: 4px 4px 0px 0px var(--color-slate-900);
+  --shadow-card-hover: 6px 6px 0px 0px var(--color-slate-900);
+  --shadow-button: 3px 3px 0px 0px var(--color-slate-900);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-glacial: 0.7s ease;
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-display);
+  background-color: var(--color-bg-light);
+  color: var(--color-slate-900);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+/* --- Utility Classes --- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* --- Soft Brutalism Components --- */
+.brutalism-card {
+  border: var(--border);
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-fast);
+}
+
+.brutalism-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.brutalism-button {
+  border: var(--border);
+  box-shadow: var(--shadow-button);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all var(--transition-fast);
+}
+
+.brutalism-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px 0px var(--color-slate-900);
+}
